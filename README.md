@@ -2,7 +2,7 @@
 
 ## Descripción
 
-Este proyecto corresponde a la pre-entrega del curso de Automatización QA.
+Este proyecto corresponde a la pre-entrega del curso de Automatización QA - Comisión 26222.
 
 Se desarrolló una suite de pruebas automatizadas utilizando Python, Selenium WebDriver y Pytest sobre el sitio de práctica SauceDemo.
 
@@ -50,17 +50,16 @@ https://www.saucedemo.com/
 ## Estructura del proyecto
 
 ```text
-AutomationQA
-│
-├── assets/
-│
-├── preLabQA/
+preLabQA/
+│   └── assets/
+│       └── style.css
 │   └── tests/
 │       └── test_saucedemo.py
-│
-├── reporte.html
-├── requirements.txt
-└── README.md
+│   └── utils/
+├── .gitignore
+├── README.md
+├── report.html
+└── requirements.txt
 ```
 
 ## Instalación
@@ -93,10 +92,10 @@ pytest -v
 Generar reporte de ejecución:
 
 ```bash
-pytest -v --html=reporte.html
+pytest -v --html=report.html
 ```
 
-El archivo `reporte.html` contendrá el detalle de los resultados obtenidos durante la ejecución de la suite de pruebas.
+El archivo `report.html` contendrá el detalle de los resultados obtenidos durante la ejecución de la suite de pruebas.
 
 ## Autor
 
